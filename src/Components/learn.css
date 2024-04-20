@@ -1,0 +1,87 @@
+body
+{
+    margin: 0;
+    font-family: "Droid Sans Mono", SansSerif;
+    background-image: url("../assets/bg_image.jpg");
+    background-repeat: round;
+    overflow: scroll;
+
+}
+#header
+{
+    background-color: black;
+    color: aliceblue;
+    padding: 1em;
+    font-size: 150%;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+    opacity: 95%;
+    z-index: 1;
+}
+#nav
+{
+    position: fixed;
+    display: flex;
+    background-color: black;
+    opacity: 95%;
+    z-index: 2;
+}
+.nav_sections
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    padding: 1em;
+    color: aliceblue;
+    font-size: 130%;
+    opacity: 95%;
+    box-shadow: blanchedalmond;
+}
+.nav_sections:hover
+{
+    scale: 110%;
+    color: black;
+    background-color: #F5EEE6;
+}
+#main_content
+{
+    padding: 2em;
+    padding-top: 5em
+}
+.images
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images:hover
+{
+    scale: 110%;
+}
+.sections
+{
+    padding: 2em;
+    padding-top: 5em;
+    background-color: aliceblue;
+    overflow: hidden;
+    border: groove black thin;
+    box-shadow: 0.3em 0.3em grey;
+    opacity: 90%;
+}
+.sections:hover
+{
+    scale: 105%
+}
+#footer
+{
+    display: flex;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    background-color: black;
+    color: aliceblue;
+}

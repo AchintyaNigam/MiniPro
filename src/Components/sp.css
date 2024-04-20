@@ -1,0 +1,64 @@
+body
+{   margin: 0;
+    background-image: url("../assets/bg_image.jpg");
+    font-family: "Droid Sans Mono", SansSerif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    font-size: 120px;
+    text-transform: uppercase;
+    font-family: 'Droid Sans Mono', SansSerif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: black;
+    outline: none;
+    text-align: center;
+    z-index: 1;
+}
+
+h1:hover
+{
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1px;
+}
+#forms
+{
+    font-size: 120%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 2em;
+    opacity: 70%;
+    padding: 1em;
+    width: 50vw;
+    height: 50vh;
+}
+
+.buttons
+{
+    display: flex;
+    background-color: darkcyan;
+    border: thick black;
+    justify-content: center;
+    color: #E5E1DA;
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.buttons:hover
+{
+    scale: 110%;
+    cursor: pointer;
+}
