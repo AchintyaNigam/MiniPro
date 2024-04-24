@@ -1,6 +1,5 @@
 import React from "react";
 import "./sp.css"
-
 export default function Register(){
     return(
 

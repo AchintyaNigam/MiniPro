@@ -8,15 +8,15 @@ import Learn from './Components/Learn.jsx'
 import Register from './Components/Register.jsx'
 import SignIn from './Components/SignIn.jsx'
 import SignUp from './Components/SignUp.jsx'
+import ThreeD from './Components/ThreeD.jsx'
 
 const router = createBrowserRouter([
   {path:"/", element: <Home />},
   {path:"/learn", element: <Learn />},
   {path:"/reg", element: <Register />},
   {path:"/signin", element: <SignIn />},
-  {path:"/signup", element: <SignUp />}
-
-
+  {path:"/signup", element: <SignUp />},
+  {path:"/threed", element: <ThreeD />}
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

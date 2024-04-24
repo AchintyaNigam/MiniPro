@@ -3,6 +3,7 @@ import './sp.css'
 import { useNavigate } from "react-router-dom";
 
 export default function SignIn() {
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [passwordError, setPasswordError] = useState('');
     const navigate = useNavigate();
@@ -19,10 +20,17 @@ export default function SignIn() {
         }
     };
 
+    const handleUsernameChange = (event) => {
+        setUsername(event.target.value);
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         if (isPasswordValid(password)) {
-            navigate("/learn");
+            if(username==="user" && password==="User@1234")
+                navigate("/learn");
+            else
+                window.alert("Incorrect Password");
         } 
         else 
         {
@@ -43,7 +51,7 @@ export default function SignIn() {
                 <form onSubmit={handleSubmit}>
                     <table>
                         <tr>
-                            <td>Username: <input type="text" name="username" required /> </td>
+                            <td>Username: <input type="text" name="username" value={username} onChange={handleUsernameChange} required /> </td>
                         </tr>
                         <tr>
                             <td>Password: <input type="password" name="password" value={password} onChange={handlePasswordChange} required /> </td>

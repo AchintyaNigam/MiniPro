@@ -43,6 +43,7 @@ h1:hover
     padding: 1em;
     width: 50vw;
     height: 50vh;
+    z-index: 5;
 }
 
 .buttons

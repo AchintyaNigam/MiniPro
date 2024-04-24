@@ -3,6 +3,7 @@ import './Home.css'
 
 export default function Home(){
     return(
+        <>
         <div className="container">
         <div id="nav">
         <a href="/signup" target="_top">
@@ -20,10 +21,11 @@ export default function Home(){
                 Register
             </div>
         </a>
+        
     </div>
        <div className="context">
         <h1>Want to learn all about shapes?</h1>
-           <a href="/learn">
+           <a href="/signin">
                <div id="click">
                    Click Here!
                </div>
@@ -45,5 +47,6 @@ export default function Home(){
             </ul>
     </div >
     </div>
+    </>
     )
 }
