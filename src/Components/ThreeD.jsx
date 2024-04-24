@@ -5,14 +5,13 @@ import "./ThreeD.css";
 export default function ThreeD() {
     const canvasRef = useRef();
     const [shapeIndex, setShapeIndex] = useState(0);
-    const shapes = ["cube", "sphere", "cuboid", "cone", "cylinder"]; // Add more shapes as needed
+    const shapes = ["cube", "sphere", "cuboid", "cone", "cylinder"];
     const shapeInfo = {
         cube: "This is a cube. It has 6 faces, all of which are squares.",
         sphere: "This is a sphere. It is perfectly round, with no edges or vertices.",
         cuboid: "This is a cuboid. It has 6 rectangular faces.",
         cone: "This is a cone. It has a circular base and a single vertex.",
         cylinder: "This is a cylinder. It has two circular bases and a curved surface.",
-        // Add more shape information as needed
     };
 
     useEffect(() => {
@@ -38,7 +37,6 @@ export default function ThreeD() {
             cuboid: new THREE.BoxGeometry(1, 0.5, 1.5),
             cone: new THREE.ConeGeometry(1, 2, 32),
             cylinder: new THREE.CylinderGeometry(1, 1, 2, 32),
-            // Add more shapes as needed
         };
 
         const material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
