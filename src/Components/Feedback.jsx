@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './FeedbackForm.css';
 import './learn.css'
 
@@ -7,7 +8,7 @@ export default function FeedbackForm ({ onSubmit }) {
   const [rating, setRating] = useState(0);
   const [learnedShapes, setLearnedShapes] = useState('');
   const [recommendation, setRecommendation] = useState(0);
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     switch (e.target.name) {
       case 'feedback':
@@ -28,6 +29,8 @@ export default function FeedbackForm ({ onSubmit }) {
   };
 
   const handleSubmit = (e) => {
+    window.alert("Submitted Successfully");
+    navigate("/learn");
     e.preventDefault();
     const feedbackData = {
       feedback,
@@ -40,6 +43,9 @@ export default function FeedbackForm ({ onSubmit }) {
     setRating(0);
     setLearnedShapes('');
     setRecommendation(0);
+    window.alert("Submitted Successfully");
+    navigate("/learn");
+
   };
 
   return (
