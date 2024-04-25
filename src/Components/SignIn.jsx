@@ -51,7 +51,9 @@ export default function SignIn() {
                 <form onSubmit={handleSubmit}>
                     <table>
                         <tr>
-                            <td>Username: <input type="text" name="username" value={username} onChange={handleUsernameChange} required /> </td>
+                            <td>Username: <input type="text" pattern="[A-Za-z0-9_]+"
+                                title="Please enter only alphanumeric characters or underscores" 
+                                name="username" value={username} onChange={handleUsernameChange} required /> </td>
                         </tr>
                         <tr>
                             <td>Password: <input type="password" name="password" value={password} onChange={handlePasswordChange} required /> </td>

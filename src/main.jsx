@@ -9,6 +9,8 @@ import Register from './Components/Register.jsx'
 import SignIn from './Components/SignIn.jsx'
 import SignUp from './Components/SignUp.jsx'
 import ThreeD from './Components/ThreeD.jsx'
+import Asessment from './Components/Assessment.jsx'
+import FeedbackForm from './Components/Feedback.jsx'
 
 const router = createBrowserRouter([
   {path:"/", element: <Home />},
@@ -16,7 +18,10 @@ const router = createBrowserRouter([
   {path:"/reg", element: <Register />},
   {path:"/signin", element: <SignIn />},
   {path:"/signup", element: <SignUp />},
-  {path:"/threed", element: <ThreeD />}
+  {path:"/threed", element: <ThreeD />},
+  {path:"/assessment", element: <Asessment />},
+  {path:"/feedback", element: <FeedbackForm />}
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

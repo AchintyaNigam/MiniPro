@@ -29,6 +29,16 @@ export default function Learn(){
                 3D Shapes!
             </div>
         	</a>
+			<a href="/assessment" target = "_top">
+            <div id = "assessment" class="nav_sections">
+                Assessment
+            </div>
+        	</a>
+			<a href="/feedback" target = "_top">
+            <div id = "feedback" class="nav_sections">
+                Feedback
+            </div>
+        	</a>
 		</div>
 		<a href="#main_content">
 		<div id="header">Geometric Shapes Their Area and Applications</div>

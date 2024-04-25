@@ -102,6 +102,16 @@ export default function ThreeD() {
                 3D Shapes!
             </div>
         	</a>
+			<a href="/assessment" target = "_top">
+            <div id = "assessment" class="nav_sections">
+                Assessment
+            </div>
+        	</a>
+			<a href="/feedback" target = "_top">
+            <div id = "feedback" class="nav_sections">
+                Feedback
+            </div>
+        	</a>
 		</div>
             <div className="threed_container">
                 <div style={{ textAlign: "center", color:"white"}}>
