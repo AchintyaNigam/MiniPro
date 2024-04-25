@@ -11,7 +11,7 @@ import tria_image from "../assets/tria_image.png"
 
 
 export default function Learn(){
-	return(
+	return(	
 		<>
 		<div id="nav">
 			<a href="/" target="_top">
